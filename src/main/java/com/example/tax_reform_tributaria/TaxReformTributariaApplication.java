@@ -8,6 +8,7 @@ public class TaxReformTributariaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TaxReformTributariaApplication.class, args);
+		System.out.println("Eu amo a Tauanny");
 	}
 
 }
