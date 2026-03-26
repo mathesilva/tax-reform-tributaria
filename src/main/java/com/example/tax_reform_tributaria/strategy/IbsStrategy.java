@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-
 @Component
-public class PisStrategy implements TaxStrategy{
+public class IbsStrategy implements TaxStrategy{
 
-    //1.65%
-    private static final BigDecimal ALIQUOTA_PIS = new BigDecimal("0.0165");
+    //18%
+
+    private static final BigDecimal ALIQUOTA_IBS = new BigDecimal("0.18");
 
     @Override
     public BigDecimal calculadora(SimulacaoTaxRequestDTO request){
         BigDecimal preco = BigDecimal.valueOf(request.preco());
-        return preco.multiply(ALIQUOTA_PIS).setScale(2, RoundingMode.HALF_UP);
+        return preco.multiply(ALIQUOTA_IBS).setScale(2, RoundingMode.HALF_UP);
     }
 }
