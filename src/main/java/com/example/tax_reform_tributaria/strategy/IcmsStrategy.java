@@ -2,7 +2,6 @@ package com.example.tax_reform_tributaria.strategy;
 
 import com.example.tax_reform_tributaria.dto.SimulacaoTaxRequestDTO;
 import org.springframework.stereotype.Component;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
